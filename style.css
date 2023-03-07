@@ -15,13 +15,12 @@ body{
     color: var(--cor-principal);
     font-family: var(--fonte-principal);
 }
-
-.border{
-    border: 1px solid transparent;
+a {
+    text-decoration: none;
 }
 
 .barra-menu{
-    position: flex;
+    display: flex;
     flex-direction: row;
     background-color: var(--cor-principal);
     height: 100px;
@@ -29,15 +28,14 @@ body{
 }
 
 .menu{
-    display: flex;
-    margin-top: 40px;
-    margin-left: 500px;
-    margin-right: 100px;
-    margin-bottom: 50px;
+    display:flex;
+    flex-direction: row;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .btn-menu{
-    
+    display: flex;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -53,6 +51,7 @@ body{
 }
 
 .first-bar{
+    display: flex;
     background-color: var(--cor-terra);
     height: 200px;  
     width: 100%;
@@ -62,25 +61,33 @@ body{
     flex-direction: column;
     position: relative;
     align-items: center;
-    margin-top: 40px;
+    gap: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 40px;
 }
 
 .second-bar{
-    background-color: lightgray;
+    display: flex;
+    background-color: #f7f7f7;
     height: 300px;
     width: 100%;
 }
 .second-bar > main{
     display:block;
     flex-direction: column;
-    font-size: 10px;
+    font-size: 12px;
     position: relative;
     align-items: center;
-    margin-top: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-right: 280px;
     margin-left: 40px;
 }
-
+.second-bar > img{
+    width: 10px;
+    height: 10px;
+}
 .footer{
     background-color: var(--cor-principal);
     display: flex;
@@ -94,8 +101,14 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    line-height: 1px;
     font-size: 10px;
-    margin: 10px;
-    margin-inline: 100px;
+    gap: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media (widht < 460px){
+    .barra-menu{
+        display: none;
+    }
 }
