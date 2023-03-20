@@ -1,6 +1,6 @@
 *{
   margin: 0px;
-  padding: 0px;  
+  padding: 0px;
 }
 
 :root{
@@ -19,7 +19,7 @@ body{
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .barra-menu{
@@ -51,9 +51,6 @@ a{
 .btn-menu:hover{
     scale: 1.2;
     color: var(--cor-terra);
-}
-.btn-mobile{
-    display: none;
 }
 .first-bar{
     display: flex;
@@ -144,7 +141,11 @@ a{
     margin-top: auto;
     margin-bottom: auto;
 }
-
+@media (min-width:401px){
+    .btn-secondary{
+        display: none !important;
+    }
+}
 @media (max-width: 400px){
     .btn-menu{
         display: none;
@@ -153,7 +154,7 @@ a{
         text-align: justify;
         font-size: 10px;
     }
-    .btn-mobile{
+    .btn-secondary{
         display: flex;
         position: relative;
         align-items:flex-start;
@@ -172,7 +173,6 @@ a{
         height: 200px;
     }
 }
-
 @media(max-width: 370px){
     .second-bar > img{
         display:none

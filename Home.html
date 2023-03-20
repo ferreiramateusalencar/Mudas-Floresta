@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mudas floresta</title>
     <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head> 
 <body>
-<nav class="barra-menu border"> 
-    <nav class="menu border">
+<nav class="barra-menu"> 
+    <nav class="menu">
         <span>
             <a href="home.html"><button class="btn-menu">Home</button></a>
         </span>
@@ -23,11 +24,21 @@
         <span>
             <a href="Entre_em_contato.html"><button class="btn-menu" >Entre em contato</button></a>
         </span>
-        <span><button class="btn-mobile"><i class="material-symbols-outlined">menu</i></button></span>
+        <div class="dropdown">
+            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class= "bi bi-list"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" type="button"><a href="Home.html">Home</a></button></li>
+              <li><button class="dropdown-item" type="button"><a href="Sobre.html">Sobre</a></button></li>
+              <li><button class="dropdown-item" type="button"><a href="Nossos_produtos.html">Nossos produtos</a></button></li>
+              <li><button class="dropdown-item" type="button"><a href="Entre_em_contato.html">Entre em contato</a></button></li>
+            </ul>
+          </div>
     </nav>
 </nav>
-<nav class="first-bar border">
-    <main class="border">
+<nav class="first-bar">
+    <main class="">
         <span>
             <h1>Mudas Floresta</h1></span>
         <span>
@@ -35,8 +46,8 @@
         </span>
     </main>
 </nav>
-<nav class="second-bar border">
-    <main class="border">
+<nav class="second-bar">
+    <main class="">
         <span>
             <h1>Seu jardim precisa? Na mudas Floresta tem!</h1></span>
         <span>
@@ -49,7 +60,7 @@
     <nav class="border">
         <h1>Obrigado por escolher a Mudas Floresta!</h1>
         <p>Desenvolvido em 2023</p>
-        <p>Nature illustrations by Storyset</p>
+        <p>Mateus Alencar Ferreira</p>
     </nav>
 </footer>
 
